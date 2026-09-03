@@ -33,13 +33,6 @@
     max-width: 560px;
     width: 100%;
   }
-  .eyebrow {
-    font-size: 13px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 14px;
-  }
   h1 {
     font-size: clamp(2.2rem, 6vw, 3.2rem);
     line-height: 1.05;
@@ -51,51 +44,40 @@
     color: var(--muted);
     font-size: 1.05rem;
     line-height: 1.6;
-    margin: 0 0 44px;
+    margin: 0;
+  }
+  .built {
+    margin-top: 88px;
+    padding-top: 20px;
+    border-top: 1px solid var(--card-border);
   }
   h2.section {
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
-    margin: 0 0 16px;
+    margin: 0 0 10px;
     font-weight: 600;
   }
-  .cards {
+  .links {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-  }
-  a.card {
-    display: block;
-    padding: 18px 20px;
-    background: var(--card);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    text-decoration: none;
-    color: var(--fg);
-    transition: border-color 0.15s ease, transform 0.15s ease;
-  }
-  a.card:hover {
-    border-color: var(--accent);
-    transform: translateY(-1px);
-  }
-  .card-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
     gap: 8px;
   }
-  .card-desc {
-    font-size: 0.92rem;
+  a.link-item {
+    text-decoration: none;
     color: var(--muted);
+    font-size: 0.88rem;
     line-height: 1.5;
   }
+  a.link-item:hover .link-title { color: var(--accent); }
+  .link-title {
+    color: var(--fg);
+    font-weight: 600;
+  }
   footer {
-    margin-top: 64px;
-    padding-top: 24px;
+    margin-top: 32px;
+    padding-top: 20px;
     border-top: 1px solid var(--card-border);
     display: flex;
     align-items: center;
@@ -118,20 +100,19 @@
 </head>
 <body>
 <main>
-  <p class="eyebrow">Arnav Mody</p>
   <h1>Hi, I'm Arnav.</h1>
-  <p class="lede">This site's pretty empty right now. Here's proof I still make things.</p>
+  <p class="lede">This site's pretty empty right now. I'm still figuring out what to put here.</p>
 
-  <h2 class="section">Things I've built</h2>
-  <div class="cards">
-    <a class="card" href="https://thebanditcollective.com" target="_blank" rel="noopener">
-      <div class="card-title">The Bandit Collective</div>
-      <div class="card-desc">An interior design studio's site &mdash; blending vintage and modern to create spaces that feel layered and intentional.</div>
-    </a>
-    <a class="card" href="https://tgpd.arnavmody.com" target="_blank" rel="noopener">
-      <div class="card-title">Tanay's Ultimate Portfolio</div>
-      <div class="card-desc">A game built to help Tanay get ready for post-marriage life.</div>
-    </a>
+  <div class="built">
+    <h2 class="section">A couple things I've built</h2>
+    <div class="links">
+      <a class="link-item" href="https://thebanditcollective.com" target="_blank" rel="noopener">
+        <span class="link-title">The Bandit Collective</span> &mdash; an interior design studio's site, blending vintage and modern to create spaces that feel layered and intentional.
+      </a>
+      <a class="link-item" href="https://tgpd.arnavmody.com" target="_blank" rel="noopener">
+        <span class="link-title">Tanay's Ultimate Portfolio</span> &mdash; a game built to help Tanay get ready for post-marriage life.
+      </a>
+    </div>
   </div>
 
   <footer>
