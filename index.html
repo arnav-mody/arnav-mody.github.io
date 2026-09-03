@@ -93,44 +93,54 @@
     color: var(--muted);
     line-height: 1.5;
   }
-  .badge {
-    font-size: 10px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    background: rgba(232, 178, 77, 0.15);
-    color: var(--accent);
-    border: 1px solid rgba(232, 178, 77, 0.35);
-    border-radius: 999px;
-    padding: 2px 8px;
-    font-weight: 700;
-  }
   footer {
-    margin-top: 48px;
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--card-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
     font-size: 0.85rem;
     color: var(--muted);
   }
-  footer a { color: var(--muted); }
+  .socials {
+    display: flex;
+    gap: 16px;
+  }
+  .socials a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .socials a:hover { color: var(--fg); }
 </style>
 </head>
 <body>
 <main>
   <p class="eyebrow">Arnav Mody</p>
-  <h1>Site's under construction.<br>The links below aren't.</h1>
-  <p class="lede">Nothing much to see here yet &mdash; but here's some stuff I've actually built.</p>
+  <h1>Hi, I'm Arnav.</h1>
+  <p class="lede">This site's pretty empty right now. Here's proof I still make things.</p>
 
   <h2 class="section">Things I've built</h2>
   <div class="cards">
     <a class="card" href="https://thebanditcollective.com" target="_blank" rel="noopener">
       <div class="card-title">The Bandit Collective</div>
-      <div class="card-desc">An interior design studio's site I built for my girlfriend &mdash; blending vintage and modern, one layered space at a time.</div>
+      <div class="card-desc">An interior design studio's site &mdash; blending vintage and modern to create spaces that feel layered and intentional.</div>
     </a>
     <a class="card" href="https://tgpd.arnavmody.com" target="_blank" rel="noopener">
-      <div class="card-title">TGPD <span class="badge">Coming Soon</span></div>
-      <div class="card-desc">A game I'm building for a friend. Not live yet &mdash; check back soon.</div>
+      <div class="card-title">Tanay's Ultimate Portfolio</div>
+      <div class="card-desc">A game built to help Tanay get ready for post-marriage life.</div>
     </a>
   </div>
 
-  <footer>&copy; 2026 Arnav Mody</footer>
+  <footer>
+    <span>&copy; 2026 Arnav Mody</span>
+    <span class="socials">
+      <a href="https://instagram.com/arnavmody" target="_blank" rel="noopener">📸 Instagram</a>
+      <a href="https://www.linkedin.com/in/arnavmody" target="_blank" rel="noopener">💼 LinkedIn</a>
+    </span>
+  </footer>
 </main>
 </body>
 </html>
