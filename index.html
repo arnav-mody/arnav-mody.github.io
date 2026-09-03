@@ -62,14 +62,21 @@
   .links {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
   a.link-item {
+    display: block;
     text-decoration: none;
     color: var(--muted);
     font-size: 0.88rem;
     line-height: 1.5;
+    padding: 14px 16px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    transition: border-color 0.15s ease;
   }
+  a.link-item:hover { border-color: var(--accent); }
   a.link-item:hover .link-title { color: var(--accent); }
   .link-title {
     color: var(--fg);
@@ -104,7 +111,7 @@
   <p class="lede">This site's pretty empty right now. I'm still figuring out what to put here.</p>
 
   <div class="built">
-    <h2 class="section">A couple things I've built</h2>
+    <h2 class="section">A few things I've built</h2>
     <div class="links">
       <a class="link-item" href="https://thebanditcollective.com" target="_blank" rel="noopener">
         <span class="link-title">The Bandit Collective</span> &mdash; an interior design studio's site, blending vintage and modern to create spaces that feel layered and intentional.
