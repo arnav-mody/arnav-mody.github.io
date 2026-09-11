@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/fly", "destination": "https://fly.arnavmody.com", "permanent": true },
+    { "source": "/fly/:path*", "destination": "https://fly.arnavmody.com/:path*", "permanent": true }
+  ]
+}
